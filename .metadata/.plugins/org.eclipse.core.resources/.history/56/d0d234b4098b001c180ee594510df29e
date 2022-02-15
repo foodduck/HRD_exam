@@ -1,0 +1,10 @@
+package DBPKG;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+	
+Class.forName("oracle.jdbc.OracleDriver");
+Connection con = DriverManager.getConnection
+("jdbc:oracle:thin@//localhowt:1521/xe","system","1234");
+return con;
